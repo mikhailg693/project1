@@ -2,13 +2,21 @@
     <title>Mikhail Green Website</title>
 <head> <meta name="viewport" content="width=device-width, initial-scale=1">      
 <style>
-
+*{
+    box-sizing: border-box;
+    }
+img{
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    }
 /*Background*/
     
 body{
     background-image: url(assets/img/factory.jpg);
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: cover;
     color:ghostwhite;
     font-family: 'VT323', monospace;
     font-size: 25px;
@@ -17,10 +25,10 @@ body{
 .column1{
     float: left;
     width: 50%;
-    padding-bottom: 80px;
+    padding: 40px;
     }
 
-experience:after {
+#experience:after {
     content: "";
     display: table;
     clear: both;
@@ -29,17 +37,17 @@ experience:after {
 .column2{
     float: left;
     width: 33.33%;
-    padding-bottom: 80px;
+    padding: 40px;
     }
 
-ul.a { 
+.ul.a { 
     list-style-type: square;
     display: table;
     margin: 0 auto;
     padding-top: 16px;
 }
 
-skills:after {
+#skills:after {
     content: "";
     display: table;
     clear: both;
@@ -48,15 +56,22 @@ skills:after {
 .s1{
     float: left;
     width: 33.33%; 
-    display: table;
-    padding-bottom: 40px;
+    /*display: table;*/
+    list-style-type: none;
+    padding:40px;
     }
-    
-projects:after {
+
+#projects:after {
     content: "";
     display: table;
     clear: both;
 }
+
+.column3{
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+    }
 </style>
 </head>
 <body>
@@ -71,15 +86,16 @@ projects:after {
     </div>
     
 <!--Landing Page Greating-->
+<div>
 <h1 align="center">Mikhail Green's Website</h1>
     
     <i><h3 id="Introduction" align="center">Introduction</h3></i>
     
     <div align="center">Welcome! My name is Mikhail Green and this is my personal website for my full stack web development bootcamp at CUNY City Tech. This site was constructed to present my web pages to potential employers for an opportunity to become a full stack developer. As you scroll, there will be sections detailing my education, experience, skills, and links to my past projects. If my qualifications are parallel for position you're seeking to fill please feel free to contact(link). Thank you for visiting. 
     </div><br>
-    
+</div>  
 <!--About Section-->
-    
+<div>    
 <i><h3 id="About" align="center">About</h3></i>
         
     <div class="column" align="center">
@@ -91,9 +107,9 @@ projects:after {
 
         When not working, you can find Mikhail listening to music, playing basketball or cooking. He also enjoys philanthropy and plans to get involved with mentoring youth.  
     </div>
-    
+</div>   
 <!--Education Section-->
-    
+<div>
 <i><h3 id="Education" align="center">Education</h3></i>
        
     <div class="column1" align="center">
@@ -106,9 +122,9 @@ projects:after {
         Syracuse Univeristy '16 <br>
         Information Technology and Management
     </div><br>   
-
+</div>
 <!--Experience Section-->
-    
+<div> 
         <i><h3 id="Experience" align="center">Experience</h3></i>
         <div class="column2" align="center">
         Accenture LLP <br>
@@ -142,9 +158,9 @@ projects:after {
                 <li>Microsoft Excel</li>
             </ul>
         </div><br>
-    
+</div>
 <!--Skills Section-->
-    
+<div>   
 <i><h3 id="Skills" align="center">Skills</h3></i>
         
     <div>
@@ -174,16 +190,28 @@ projects:after {
             </li>
         </ul>
     </div><br>    
-    
+</div>   
 <!--Projects Section-->
-    
+<div>  
 <i><h3 id="Projects" align="center">Projects</h3></i>
     
-    <div>
-        
-        
-    </div><br>
+    <div class="column3" align="center" style="padding-top: 20px">
+        <a href="https://www.bankofamerica.com/">
+        <img src="assets/img/boa.svg.png">
+        </a>
+    </div>
     
+    <div class="column3" align="center">
+        <a href="https://www1.nyc.gov/assets/dsny/site/home">
+        <img src="assets/img/sanitation.png">
+        </a>
+    </div>
     
+    <div class="column3" align="center" style="padding-top: 20px">
+        <a href="https://www.accenture.com/us-en/company-investing-in-america">
+        <img src="assets/img/accenture.svg.png">
+        </a>
+    </div>
+</div>
 </body> 
 </html>

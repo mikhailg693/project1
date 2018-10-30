@@ -2,14 +2,24 @@
     <title>Mikhail Green Website</title>
 <head> <meta name="viewport" content="width=device-width, initial-scale=1">      
 <style>
-
-/*Background*/
+*{
+    box-sizing: border-box;
+    }
+    
+img{
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    }
     
 body{
-    background-image: url(assets/img/factory.jpg);
+    background-image: url(assets/img/brooklynskyline.jpg);
+    /*background-color: #fdf3e5;*/
     background-size: 100%;
-    background-attachment: fixed;
-    color:ghostwhite;
+    background-blend-mode: soft-light;
+    background-attachment:fixed;
+    color: whitesmoke;
     font-family: 'VT323', monospace;
     font-size: 25px;
     }
@@ -17,70 +27,74 @@ body{
 .column1{
     float: left;
     width: 50%;
-    padding-bottom: 80px;
+    padding: 40px;
     }
-
-experience:after {
+#experience:after {
     content: "";
     display: table;
     clear: both;
 }
-
 .column2{
     float: left;
     width: 33.33%;
-    padding-bottom: 80px;
+    padding: 40px;
     }
-
-ul.a { 
+.ul.a { 
     list-style-type: square;
     display: table;
-    margin: 0 auto;
-    padding-top: 16px;
+    padding: 40px;
 }
-
-skills:after {
+#skills:after {
     content: "";
     display: table;
     clear: both;
 }
-
 .s1{
     float: left;
     width: 33.33%; 
-    display: table;
-    padding-bottom: 40px;
+    /*display: table;*/
+    list-style-type: none;
+    padding:40px;
     }
-    
-projects:after {
+#projects:after {
     content: "";
     display: table;
     clear: both;
 }
+.column3{
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+    }    
+
+.nav1{
+    display: inline-block;
+    }
+
 </style>
 </head>
 <body>
 
+<!--Nav-->
+    <ul class="nav">
+        <li class="nav1"><a class="active" href="#home">Home</a></li>
+        <li class="nav1"><a href="contact.html">Contact</a></li>
+    </ul>    
+    
 <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     
-<!--Nav-->
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    
 <!--Landing Page Greating-->
-<h1 align="center">Mikhail Green's Website</h1>
+<div>
     
-    <i><h3 id="Introduction" align="center">Introduction</h3></i>
+    <i><h3 id="Introduction" align="center">Mikhail Green Resume</h3></i>
     
     <div align="center">Welcome! My name is Mikhail Green and this is my personal website for my full stack web development bootcamp at CUNY City Tech. This site was constructed to present my web pages to potential employers for an opportunity to become a full stack developer. As you scroll, there will be sections detailing my education, experience, skills, and links to my past projects. If my qualifications are parallel for position you're seeking to fill please feel free to contact(link). Thank you for visiting. 
     </div><br>
-    
+</div>  
 <!--About Section-->
-    
-<i><h3 id="About" align="center">About</h3></i>
+<div>    
+<i><h3 id="About" align="center">Background</h3></i>
         
     <div class="column" align="center">
         Mikhail joined Accenture LLP in April 2017 as a Technology Concultant based in New York. He graduated from Syracuse University in May 2016.     
@@ -91,9 +105,9 @@ projects:after {
 
         When not working, you can find Mikhail listening to music, playing basketball or cooking. He also enjoys philanthropy and plans to get involved with mentoring youth.  
     </div>
-    
+</div>   
 <!--Education Section-->
-    
+<div>
 <i><h3 id="Education" align="center">Education</h3></i>
        
     <div class="column1" align="center">
@@ -106,9 +120,9 @@ projects:after {
         Syracuse Univeristy '16 <br>
         Information Technology and Management
     </div><br>   
-
+</div>
 <!--Experience Section-->
-    
+<div> 
         <i><h3 id="Experience" align="center">Experience</h3></i>
         <div class="column2" align="center">
         Accenture LLP <br>
@@ -133,7 +147,7 @@ projects:after {
         </div>
         
         <div class="column2" align="center">
-        New York City Department of Sanitation <br>
+        NYC Department of Sanitation <br>
             June 2016 - September 2016<br>
                 Project Management Intern
             <ul class="a">
@@ -142,13 +156,13 @@ projects:after {
                 <li>Microsoft Excel</li>
             </ul>
         </div><br>
-    
+</div>
 <!--Skills Section-->
-    
-<i><h3 id="Skills" align="center">Skills</h3></i>
-        
+     
     <div>
+        <i><h3 id="Skills" align="center">Skills</h3></i>
         <ul class="b">
+            
             <li class="s1" align="center">Microsoft Excel <br>
                 <progress min="0" max="100" value="75"></progress>
             </li>
@@ -174,16 +188,28 @@ projects:after {
             </li>
         </ul>
     </div><br>    
-    
+  
 <!--Projects Section-->
-    
+<div>  
 <i><h3 id="Projects" align="center">Projects</h3></i>
     
-    <div>
-        
-        
-    </div><br>
+    <div class="column3" align="center" style="padding-top: 75px">
+        <a href="https://www.accenture.com/us-en/company-investing-in-america">
+        <img src="assets/img/accenture.svg.png">
+        </a>
+    </div>
     
+    <div class="column3" align="center">
+        <a href="https://www1.nyc.gov/assets/dsny/site/home">
+        <img src="assets/img/sanitation.png">
+        </a>
+    </div>
     
+    <div class="column3" align="center" style="padding-top: 112px">
+        <a href="https://www.bankofamerica.com/">
+        <img src="assets/img/boa.svg.png">
+        </a>
+    </div>
+</div>
 </body> 
 </html>

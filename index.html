@@ -15,7 +15,6 @@ img{
     
 body{
     background-image: url(assets/img/brooklynskyline.jpg);
-    /*background-color: #fdf3e5;*/
     background-size: 100%;
     background-blend-mode: soft-light;
     background-attachment:fixed;
@@ -73,11 +72,12 @@ body{
     padding: 8px 12px;
     border: solid;
     border-color: lightslategray;
-    border-style:ridge;
+/*    border-style:ridge;*/
     }    
 
     .nav1 a{
         float: left;
+        text-decoration: none;
     }
     
 </style>
@@ -87,7 +87,7 @@ body{
 <!--Nav-->
     <ul class="nav">
         <li class="nav1"><a class="active" href="#home">Home</a></li>
-        <li class="nav1"><a href="contact.html">Contact</a></li>
+        <li class="nav1"><a href="contact.html" target="_blank">Contact</a></li>
     </ul>    
     
 <!--Font-->
@@ -96,44 +96,37 @@ body{
 <!--Landing Page Greating-->
 <div>
     
-    <i><h2 id="Introduction" align="center">Mikhail Green Resume</h2></i>
+    <h2 id="Introduction" align="center">Mikhail Green Resume</h2>
     
-    <div align="center">Welcome! My name is Mikhail Green and this is my personal website for my full stack web development bootcamp at CUNY City Tech. This site was constructed to present my web pages to potential employers for an opportunity to become a full stack developer. As you scroll, there will be sections detailing my education, experience, skills, and links to my past projects. If my qualifications are parallel with the position you're seeking to fill please feel free to contact me. 
-    Thank you for visiting. 
-    </div><br>
+    <i><div align="center">Welcome! My name is Mikhail Green and this is my personal website as well as my first project  for my full stack web development bootcamp at CUNY City Tech. This site was constructed to present my skills to potential employers for an opportunity to become a full stack developer. As you scroll there will be sections detailing a snippet of my education, experience, and skills. If my qualifications are parallel with the position you're seeking to fill please feel free to contact me. Thank you for visiting. 
+    </div></i><br>
 </div>  
+    
 <!--About Section-->
 <div>    
-<i><h2 id="About" align="center">Background</h2></i>
+<h2 id="About" align="center">Background</h2>
         
-    <div class="column" align="center">
-        I joined Accenture LLP in April 2017 as a Technology Consultant based in New York. I graduated from Syracuse University in May 2016.     
-
-        Prior to Accenture, I was a Technology Coordinator for Bank of America where I participated in the ordering, installation and coordination process for fulfilling the company’s technological demands. 
-        
-        My career focuses include data analytics, database management, and web development.
-
-        When not working, you can find me listening to music, playing basketball or cooking. I also enjoy philanthropy and plan to get involved with mentoring youth.  
-    </div>
+    <i><div class="column" align="center">
+        I joined Accenture LLP in April 2017 as a Technology Consultant based in New York. I graduated from Syracuse University in May 2016. Prior to Accenture, I was a Technology Coordinator for Bank of America where I participated in the ordering, installation and coordination process for fulfilling the company’s technological demands. My career focuses include data mining, testing, and now web development. When not working, you can find me listening to music, playing basketball or cooking. I plan to get involved with mentoring youth through tech upon completion of my bootcamps.
+    </div></i>
 </div>   
 <!--Education Section-->
 <div>
-<i><h2 id="Education" align="center">Education</h2></i>
+<h2 id="Education" align="center">Education</h2>
        
-    <div class="column1" align="center">
-        City University of New York '18 <br>
+    <i><div class="column1" align="center">
+        City University of New York '19 <br>
         Full-Stack Web Development Bootcamp
+    </div></i>
     
-    </div>
-    
-    <div class="column1" align="center">
+    <i><div class="column1" align="center">
         Syracuse Univeristy '16 <br>
         Information Technology and Management
-    </div><br>   
+    </div></i><br>   
 </div>
 <!--Experience Section-->
 <div> 
-        <i><h2 id="Experience" align="center">Experience</h2></i>
+        <h2 id="Experience" align="center">Experience</h2>
         <div class="column2" align="center">
         Accenture LLP <br>
             April 2017 - Present<br>
@@ -170,19 +163,19 @@ body{
 <!--Skills Section-->
      
     <div>
-        <i><h2 id="Skills" align="center">Skills</h2></i>
+        <h2 id="Skills" align="center">Skills</h2>
         <ul class="b">
             
             <li class="s1" align="center">Microsoft Excel <br>
-                <progress min="0" max="100" value="75"></progress>
+                <progress min="0" max="100" value="75">75%</progress>
             </li>
             
             <li class="s1" align="center">Microsoft Visio <br>
-                <progress min="0" max="100" value="55"></progress>
+                <progress min="0" max="100" value="75"></progress>
             </li>
             
             <li class="s1" align="center">HTML/HTML5 <br>
-                <progress min="0" max="100" value="35"></progress>
+                <progress min="0" max="100" value="25"></progress>
             </li>
             
             <li class="s1" align="center">CSS3 <br>
@@ -194,32 +187,32 @@ body{
             </li>
             
             <li class="s1" align="center">Bash/Terminal <br>
-                <progress min="0" max="100" value="45"></progress>
+                <progress min="0" max="100" value="50"></progress>
             </li>
         </ul>
     </div><br>    
   
 <!--Projects Section-->
 <div>  
-<i><h2 id="Projects" align="center">Projects</h2></i>
+<h2 id="Projects" align="center">Projects</h2>
     
     <div class="column3" align="center" style="padding-top: 75px">
-        <a href="https://www.accenture.com/us-en/company-investing-in-america">
+        <a href="https://www.accenture.com/us-en/company-investing-in-america" target="_blank">
         <img src="assets/img/accenture.svg.png">
         </a>
     </div>
     
     <div class="column3" align="center">
-        <a href="https://www1.nyc.gov/assets/dsny/site/home">
+        <a href="https://www1.nyc.gov/assets/dsny/site/home" target="_blank">
         <img src="assets/img/sanitation.png">
         </a>
     </div>
     
     <div class="column3" align="center" style="padding-top: 112px">
-        <a href="https://www.bankofamerica.com/">
+        <a href="https://www.bankofamerica.com/" target="_blank">
         <img src="assets/img/boa.svg.png">
         </a>
     </div>
 </div>
-</body> 
+</body>  
 </html>
